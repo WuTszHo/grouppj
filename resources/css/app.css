@@ -1,0 +1,34 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Noto Sans HK', 'Noto Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+        'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --color-hk-red: #de2910;
+    --color-hk-gold: #f5c842;
+    --color-neon-pink: #ff2d78;
+    --color-neon-cyan: #00e5ff;
+    --color-dark: #0f0f1a;
+    --color-dark-card: #1a1a2e;
+    --color-dark-border: #2a2a40;
+}
+
+/* Neon glow utility for headings */
+.neon-text {
+    text-shadow: 0 0 7px var(--color-neon-pink), 0 0 20px var(--color-neon-pink), 0 0 40px var(--color-neon-pink);
+}
+.neon-text-cyan {
+    text-shadow: 0 0 7px var(--color-neon-cyan), 0 0 20px var(--color-neon-cyan), 0 0 40px var(--color-neon-cyan);
+}
+
+/* Neon border glow for cards */
+.neon-border {
+    box-shadow: 0 0 8px var(--color-neon-pink), inset 0 0 8px rgba(255, 45, 120, 0.1);
+}
+.neon-border-cyan {
+    box-shadow: 0 0 8px var(--color-neon-cyan), inset 0 0 8px rgba(0, 229, 255, 0.1);
+}
